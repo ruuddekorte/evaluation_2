@@ -1,41 +1,58 @@
-# Création d'une base de donnée pour un hôtel
-Il vous est demandé de concevoir et mettre en place une base de données pour un hôtel.  
-Celle-ci devra respecter les conditions définies ci-dessous.
+# Creating a database for a hotel
 
-## Objectifs
-* **Créer le modèle de la base de données (diagramme UML).**  
-    Durée estimée : *1 jour*  
-    Compétence : *2 Concevoir une base de donnée (niv 3)*
-* **Concevoir la base de données en fonction du modèle (Fichier sql).**  
-    Durée estimée : *1 jour*  
-    Compétence : *3 Mettre en place une base de donnée (niv 3)*
+UML Diagram :
+- text version        .. documentation/db_hotel_setup_base.doc
+- image version       .. documentation/db_hotel_structure.png
 
-## Réalisation :
-**Durée :** 2 jours
-**Groupe :** En solo
+MYSQL Create database structure :
+- executable sql file .. sql/db_hotel.sql
+- readable version    .. documentation/db_hotel_script_create_db_print.doc
 
-## Rendu :
-* Le diagramme UML
-* La structure de la base de donnée dans un fichier .sql
-* Un jeu de test de la base de donnée dans un fichier .backup.sql
+MYSQL test of database :
+- executable sql file .. sql/backup.sql
+- readable version    .. documentation/db_hotel_fill_db_print.doc
+
+
+
+# Exercise instructions
+
+You are asked to design and set up a database for a hotel.
+This must respect the conditions defined below.
+
+## Objectives
+* ** Create the model of the database (UML diagram). **
+    Estimated time: * 1 day *
+    Competency: * 2 Design a database (level 3) *
+* ** Design the database according to the model (sql file). **
+    Estimated time: * 1 day *
+    Competency: * 3 Establish a database (level 3) *
+
+## Production :
+** Duration: ** 2 days
+** Group: ** Solo
+
+## Rendering:
+* The UML diagram
+* The structure of the database in a .sql file
+* A test game of the database in a .backup.sql file
 
 ## Users stories
-* L'hôtel propose plusieurs chambres, elle ont chacune un nom et une supérficice.
-* Les chambres peuvent être des chambres ou des suites.
-* Il est possible de connaitre l'étage ainsi que la vue de chaque chambre.
-* Certaines chambres sont accessibles aux personnes à mobilité réduite.
-* Les chambres peuvent avoir un lit simple, double (queen size ou king size).
-* L'hôtel propose différents services tels que le petit déjeuner en chambre, le mini bar (que pour les suites), la bouteille de champagne, etc.
-* Les salles de bains des chambres peuvent avoir une douche et/ou une baignoire.
-* Le prix de chaque chambre est à la nuitée et ne tient pas compte des services.
-* Certains services ne sont disponibles que pour certaines chambres.
-* Les services ont une description (en plus d'un nom) afin de permettre aux clients de bien les comprendre.
-* Les services sont catégorisés : matériel, bien-être, repas et spécial.
-* Chaque service a un coût à rajouter dans la commande.
-* Le gérant de l'hôtel peut suivre les commandes des clients.
-* En plus de connaître le nom et le prénom, le gérant peut contacter l'client par téléphone ou par mail.
-* L'client peut recevoir une facture à son adresse.
-* L'client pourra s'autentifier sur le site via son mail et un mot de passe pour gérer sa réservation.
-* Le gérant de l'hôtel peut accéder à toutes les réservations, celles-ci contiennent le client, la chambre, la date d'arrivée et la date de départ et les services associés.
-* L'client et le gérant peuvent voir combien à coûté une réservation (prix de la chambre + services).
-* Le gérant peut voir l'état de la réservation : en cours, paiement effectué, annulée, etc.
+* The hotel has several rooms, each with a name and an extra room.
+* The rooms can be rooms or suites.
+* It is possible to know the floor and the view of each room.
+* Some rooms are accessible to people with reduced mobility.
+* The rooms can have a single bed, double (queen size or king size).
+* The hotel offers various services such as breakfast in the room, mini bar (for suites), bottle of champagne, etc.
+* The bathrooms of the rooms can have a shower and / or a bath.
+* The price of each room is per night and does not include services.
+* Some services are only available for some rooms.
+* Services have a description (in addition to a name) to help customers understand them.
+* The services are categorized: equipment, well-being, meals and special.
+* Each service has a cost to add to the order.
+* The hotel manager can follow orders from guests.
+* In addition to knowing the first and last name, the manager can contact the customer by phone or email.
+* The customer can receive an invoice at his address.
+* The customer can authenticate on the site via his email and a password to manage his reservation.
+* The hotel manager can access all bookings, these contain the guest, room, date of arrival and departure date and associated services.
+* The customer and the manager can see how much has cost a reservation (room rate + services).
+* The manager can see the status of the booking: in progress, payment made, canceled, etc.
