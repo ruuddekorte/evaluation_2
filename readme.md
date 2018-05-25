@@ -3,6 +3,7 @@
 UML Diagram :
 - text version        .. documentation/db_hotel_setup_base.doc
 - image version       .. documentation/db_hotel_structure.png
+- output phpmyadmin   .. documentation/UML_DB_HOTEL.pdf
 
 MYSQL Create database structure :
 - executable sql file .. sql/db_hotel.sql
